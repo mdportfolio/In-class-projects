@@ -1,0 +1,35 @@
+// To test three methods of recursion.
+public class Recursion {
+
+	public static void main(String[] args) {
+		System.out.println("productInteger (20):" + productInteger(20));
+		System.out.println("productEven (21):" + productEven(21));
+		System.out.println("productOdd (22):" + productOdd(22));
+	}
+
+	public static int productInteger(int n){ // recursion definition for any positive integer
+		int a;
+		if(n == 1)
+			return 1;
+		else 
+			a = n * productInteger(n + 1);
+		return a;
+	}
+	
+	public static int productEven(int n){ // recursion  definition for any even positive integer
+		int e;
+		if (n == 2)
+			return 2;
+		else e = 2*productEven(n - 1)*(2 * n);
+		return e;
+	}
+	public static int productOdd(int n){ // recursion definition for any odd positive integer
+		int o;
+		if (n == 1)
+			return 1;
+		else o = n * productOdd(n + 1);
+		return o;
+		
+	}
+}
+
