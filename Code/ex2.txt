@@ -1,0 +1,7 @@
+fun compareValue(price:int, shares:int, threshold:int)=
+print(Int.toString())
+val threshold = 250;
+val price = 100;
+val shares = 5;
+compareValue(price, shares, threshold);
+compareValue(250, 100, 5);

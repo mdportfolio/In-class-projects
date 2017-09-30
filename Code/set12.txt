@@ -1,0 +1,12 @@
+fun sslow_sum n = 0
+  | slow_sum n = 1 + slow_sum (n - 1)
+
+fun first_fact(n)=
+if n =0
+then 1
+else n * first_fact(n-1)
+
+fun fact_tail(n)=
+let fun fact_aux(n,acc)= if n=0 then acc else fact_aux(n-1,acc*n)
+in fact_aux(n,1)
+end

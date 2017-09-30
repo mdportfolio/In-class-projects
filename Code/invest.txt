@@ -1,0 +1,10 @@
+datatype investment = Stock of string * int * int
+			|Cash of int
+
+fun ValueOf(inv)=
+	case inv of 
+ 		Stock(_,p,s)=> p * s
+		|Cash(a) => a
+ 
+fun compareValue(inv1,inv2)=
+valueOf(inv1) > valueOf(inv2) 

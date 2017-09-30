@@ -1,0 +1,9 @@
+fun card_value()=
+if card == "aces" 
+then 11 
+else nothing
+andalso
+if card == "jack""queen""king"
+then 10
+else nothing
+             

@@ -1,0 +1,9 @@
+fun count_list(xs : int list)=
+if null xs
+then 0
+else 1 + count_list(tl(xs));
+
+fun find_last(xs : int list)=
+if null tl(xs)
+then hd(xs)
+else find_last(tl(xs));

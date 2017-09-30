@@ -1,0 +1,7 @@
+fun printValue (symbol:string, price:int, shares:int)=
+print(symbol ^ " : " ^ Int.toString(price * shares) ^ "\n");
+val symbol= "AAPL";
+val price = 100;
+val shares = 5;
+printValue(symbol, price, shares);
+printValue("AAPL", 25, 4);

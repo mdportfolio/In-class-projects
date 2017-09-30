@@ -1,0 +1,38 @@
+['Marciana Davis', 'Haojing Liu', 'Hasan Arani', 'Mezohn Owens', 'Pujan Patel']
+
+fun even(x)=
+if x=0
+then true
+else odd(x-1)
+
+and odd(x)=
+if x = 0
+then false
+else even(x-1)
+
+and anotherthing(x)= false
+
+val test1= even(554454)
+val test2 = even(445555)
+
+val test3= odd(445555)
+
+fun longerstring xs=
+	case xs of 
+		[] => true
+		| x:[] => true
+		| hd::(neck::rest) => (size(head) <= size(neck) andalso longerstrings(neck::rest))
+
+val test1 = longerStrings()
+val test2
+
+fun everyother lst =
+ let fun rev_aux(lst,acc) =
+case lst of 
+[] => acc
+| x::y::xs => rev_aux(xs, acc@x)
+| x::xs => rev_aux(xs, x::acc)
+in rev_aux(lst,[])
+end
+val test1 = rev([1,2,3,4,5])
+val test2 = rev(["a","b","c","d","e"])

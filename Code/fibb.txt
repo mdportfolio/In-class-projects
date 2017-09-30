@@ -1,0 +1,5 @@
+fun fib (x:int)=
+	if (x=0 orelse x=1)
+	then (print ("x = " ^ Int.toString(x) ^ "\n"); x)
+	else (print (x = " ^ Int.toString(x) ^"f(x-1) = "
+^ Int.toString(fib(x-1)) ^ "f(x-2)=" ^ Int.toString(fib(x-2)));
