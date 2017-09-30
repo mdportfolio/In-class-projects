@@ -1,0 +1,22 @@
+['Charmi Shah', 'Shrey Desai', 'Marciana Davis', 'Mezohn Owens']
+
+Exercise 1
+val str = "is less than fun then SML"
+fun strAppend str list =
+	case list of 
+		[] => []
+		|first :: rest => first^str ::strAppend rest
+val result = lessFunAppend ["hiking","skating","surfing","my favorite video game"]
+
+fun refFuncs f myList =
+case myList of 
+[] => []
+|first :: rest => f (first) :: refFuncs f rest
+ 
+Exercise 2
+(define (hello_world n)
+(if (= 1 n)
+(printf "hello world~%")
+(begin 
+(printf "hello world~%")
+(hello_world n))
